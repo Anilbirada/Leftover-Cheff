@@ -1,0 +1,684 @@
+{
+  "metadata": {
+    "catalogue_version": "1.0.0",
+    "created_at": "2026-10-12",
+    "licence": "CC0-1.0 / Original Test & Reference Culinary Catalogue developed for Leftover Chef",
+    "provenance": "Curated original test recipes with verified ingredient relationships, explicit culinary distinctions, and transparent allergen metadata."
+  },
+  "ingredients": [
+    {
+      "id": "ing_potato",
+      "canonical_name": "potato",
+      "category": "vegetable",
+      "description": "Starchy root vegetable suitable for boiling, roasting, curries, and skillets.",
+      "aliases": ["potatoes", "aloo", "white potato", "russet potato", "yukon gold potato"]
+    },
+    {
+      "id": "ing_onion",
+      "canonical_name": "onion",
+      "category": "vegetable",
+      "description": "Bulb onion (yellow, red, or white) used as an aromatic base.",
+      "aliases": ["onions", "bulb onion", "red onion", "yellow onion", "white onion", "pyaz"]
+    },
+    {
+      "id": "ing_spring_onion",
+      "canonical_name": "spring onion",
+      "category": "vegetable",
+      "description": "Mild green shoots harvested before a large bulb forms; distinct from bulb onion.",
+      "aliases": ["spring onions", "scallion", "scallions", "green onion", "green onions"]
+    },
+    {
+      "id": "ing_tomato",
+      "canonical_name": "tomato",
+      "category": "vegetable",
+      "description": "Fresh culinary tomato used for sauces, curries, salads, and rice dishes.",
+      "aliases": ["tomatoes", "roma tomato", "plum tomato", "vine tomato", "tamatar"]
+    },
+    {
+      "id": "ing_rice",
+      "canonical_name": "rice",
+      "category": "grain",
+      "description": "Uncooked or cooked white/basmati/jasmine rice grain.",
+      "aliases": ["white rice", "basmati rice", "jasmine rice", "cooked rice", "leftover rice", "steamed rice", "chawal"]
+    },
+    {
+      "id": "ing_cheese",
+      "canonical_name": "cheese",
+      "category": "dairy",
+      "description": "Dairy cheese such as cheddar, mozzarella, or mild block cheese.",
+      "aliases": ["cheddar cheese", "mozzarella", "grated cheese", "shredded cheese", "cheddar"]
+    },
+    {
+      "id": "ing_cooking_oil",
+      "canonical_name": "cooking oil",
+      "category": "fat_oil",
+      "description": "Neutral cooking oil such as sunflower, canola, or vegetable oil.",
+      "aliases": ["vegetable oil", "sunflower oil", "canola oil", "oil", "neutral oil", "olive oil"]
+    },
+    {
+      "id": "ing_salt",
+      "canonical_name": "salt",
+      "category": "seasoning",
+      "description": "Table salt, sea salt, or kosher salt.",
+      "aliases": ["sea salt", "table salt", "kosher salt", "namak"]
+    },
+    {
+      "id": "ing_turmeric",
+      "canonical_name": "turmeric powder",
+      "category": "spice",
+      "description": "Ground turmeric root used for earthy flavour and golden colour.",
+      "aliases": ["turmeric", "ground turmeric", "haldi"]
+    },
+    {
+      "id": "ing_cumin_seeds",
+      "canonical_name": "cumin",
+      "category": "spice",
+      "description": "Whole or ground cumin spice.",
+      "aliases": ["cumin seeds", "ground cumin", "jeera", "cumin powder"]
+    },
+    {
+      "id": "ing_chilli_powder",
+      "canonical_name": "chilli powder",
+      "category": "spice",
+      "description": "Dried ground red chilli spice; distinct from fresh chilli peppers.",
+      "aliases": ["red chilli powder", "chili powder", "cayenne powder", "lal mirch powder"]
+    },
+    {
+      "id": "ing_fresh_chilli",
+      "canonical_name": "fresh chilli",
+      "category": "vegetable",
+      "description": "Fresh green or red chilli pepper; distinct from dried chilli powder.",
+      "aliases": ["green chilli", "green chillies", "fresh chili", "jalapeno", "hari mirch", "serrano pepper"]
+    },
+    {
+      "id": "ing_garlic",
+      "canonical_name": "garlic",
+      "category": "vegetable",
+      "description": "Fresh garlic cloves used as an aromatic.",
+      "aliases": ["garlic cloves", "garlic clove", "minced garlic", "lahsun"]
+    },
+    {
+      "id": "ing_ginger",
+      "canonical_name": "ginger",
+      "category": "vegetable",
+      "description": "Fresh ginger rhizome used for warm, peppery aroma.",
+      "aliases": ["fresh ginger", "ginger root", "minced ginger", "adrak"]
+    },
+    {
+      "id": "ing_milk",
+      "canonical_name": "milk",
+      "category": "dairy",
+      "description": "Cow's dairy milk; distinct from plant-based coconut milk.",
+      "aliases": ["dairy milk", "whole milk", "cow milk", "skim milk"]
+    },
+    {
+      "id": "ing_coconut_milk",
+      "canonical_name": "coconut milk",
+      "category": "pantry",
+      "description": "Plant-based liquid extracted from grated coconut flesh; distinct from dairy milk.",
+      "aliases": ["canned coconut milk", "coconut cream"]
+    },
+    {
+      "id": "ing_butter",
+      "canonical_name": "butter",
+      "category": "dairy",
+      "description": "Churned dairy butter; distinct from plant-oil margarine.",
+      "aliases": ["unsalted butter", "salted butter", "dairy butter", "makhan"]
+    },
+    {
+      "id": "ing_margarine",
+      "canonical_name": "margarine",
+      "category": "fat_oil",
+      "description": "Vegetable-oil spread; distinct from dairy butter.",
+      "aliases": ["vegetable spread", "plant margarine"]
+    },
+    {
+      "id": "ing_wheat_flour",
+      "canonical_name": "wheat flour",
+      "category": "grain",
+      "description": "All-purpose or whole-wheat flour containing gluten; distinct from rice flour.",
+      "aliases": ["all-purpose flour", "plain flour", "whole wheat flour", "atta", "maida", "flour"]
+    },
+    {
+      "id": "ing_rice_flour",
+      "canonical_name": "rice flour",
+      "category": "grain",
+      "description": "Finely milled gluten-free rice flour; distinct from wheat flour.",
+      "aliases": ["ground rice flour", "chawal ka atta"]
+    },
+    {
+      "id": "ing_peanuts",
+      "canonical_name": "peanuts",
+      "category": "legume_nut",
+      "description": "Groundnut legume (major allergen); distinct from tree nuts.",
+      "aliases": ["peanut", "roasted peanuts", "groundnuts", "moongphali"]
+    },
+    {
+      "id": "ing_tree_nuts",
+      "canonical_name": "tree nuts",
+      "category": "legume_nut",
+      "description": "Tree nuts such as almonds, cashews, or walnuts; distinct from peanuts.",
+      "aliases": ["cashews", "almonds", "walnuts", "cashew nuts", "badam", "kaju"]
+    },
+    {
+      "id": "ing_egg",
+      "canonical_name": "egg",
+      "category": "protein",
+      "description": "Whole poultry eggs.",
+      "aliases": ["eggs", "hen egg", "whole egg", "anda"]
+    },
+    {
+      "id": "ing_spinach",
+      "canonical_name": "spinach",
+      "category": "vegetable",
+      "description": "Fresh leafy green spinach.",
+      "aliases": ["baby spinach", "spinach leaves", "palak"]
+    },
+    {
+      "id": "ing_chickpeas",
+      "canonical_name": "chickpeas",
+      "category": "legume_nut",
+      "description": "Cooked or canned garbanzo beans.",
+      "aliases": ["garbanzo beans", "cooked chickpeas", "canned chickpeas", "chana", "kabuli chana"]
+    },
+    {
+      "id": "ing_pasta",
+      "canonical_name": "pasta",
+      "category": "grain",
+      "description": "Dried wheat pasta such as spaghetti, penne, or fusilli.",
+      "aliases": ["spaghetti", "penne", "fusilli", "macaroni", "noodles"]
+    },
+    {
+      "id": "ing_black_pepper",
+      "canonical_name": "black pepper",
+      "category": "spice",
+      "description": "Ground or cracked black peppercorn.",
+      "aliases": ["ground black pepper", "cracked pepper", "pepper", "kali mirch"]
+    },
+    {
+      "id": "ing_coriander_leaves",
+      "canonical_name": "coriander leaves",
+      "category": "herb",
+      "description": "Fresh cilantro/coriander leaves used as herb garnish.",
+      "aliases": ["cilantro", "fresh coriander", "dhaniya leaves", "coriander"]
+    },
+    {
+      "id": "ing_soy_sauce",
+      "canonical_name": "soy sauce",
+      "category": "condiment",
+      "description": "Fermented soy and wheat seasoning sauce.",
+      "aliases": ["light soy sauce", "dark soy sauce", "shoyu"]
+    },
+    {
+      "id": "ing_lemon_juice",
+      "canonical_name": "lemon juice",
+      "category": "condiment",
+      "description": "Freshly squeezed lemon or lime juice.",
+      "aliases": ["lemon", "lime juice", "fresh lemon juice", "nimbu"]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "rec_potato_tomato_curry",
+      "name": "Homestyle Potato Tomato Curry (Aloo Tamatar)",
+      "description": "A comforting, aromatic everyday curry made with diced potatoes, ripe tomatoes, onions, and warm pantry spices.",
+      "preparation_minutes": 10,
+      "cooking_minutes": 20,
+      "default_servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "Indian",
+      "image_reference": "/images/potato-tomato-curry.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["vegetarian", "vegan", "gluten-free", "dairy-free", "nut-free"],
+      "allergens": [
+        {
+          "allergen": "none_declared_in_base_recipe",
+          "verification_status": "verified",
+          "source_reference": "Ingredient list audited against major 9 allergens; cross-contamination in home kitchens applies."
+        }
+      ],
+      "instructions": [
+        "Peel and cut the potatoes into 2 cm cubes. Finely chop the onion and dice the tomatoes.",
+        "Heat cooking oil in a heavy pan over medium heat. Add cumin and let it sizzle for 15 seconds.",
+        "Add the chopped onion and sauté for 4 to 5 minutes until softened and translucent.",
+        "Stir in the diced tomatoes, turmeric powder, chilli powder, and salt. Cook for 5 minutes until the tomatoes break down into a thick base.",
+        "Add the cubed potatoes and 250 ml of water. Mix well, cover with a lid, and simmer on medium-low heat for 12 to 15 minutes until the potatoes are fork-tender.",
+        "Mash two or three potato cubes lightly with the back of the spoon to thicken the curry sauce. Garnish with fresh coriander leaves if available and serve warm."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_potato", "quantity": 2, "unit": "piece", "requirement_type": "required", "preparation_note": "peeled and cubed" },
+        { "ingredient_id": "ing_tomato", "quantity": 2, "unit": "piece", "requirement_type": "required", "preparation_note": "finely diced" },
+        { "ingredient_id": "ing_onion", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "finely chopped" },
+        { "ingredient_id": "ing_cooking_oil", "quantity": 1, "unit": "tablespoon", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_turmeric", "quantity": 0.5, "unit": "teaspoon", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_cumin_seeds", "quantity": 0.5, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": "whole or ground" },
+        { "ingredient_id": "ing_chilli_powder", "quantity": 0.5, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": "adjust to spice preference" },
+        { "ingredient_id": "ing_coriander_leaves", "quantity": 1, "unit": "tablespoon", "requirement_type": "optional", "preparation_note": "chopped for garnish" }
+      ]
+    },
+    {
+      "id": "rec_cheesy_potato_onion_skillet",
+      "name": "Cheesy Potato, Onion & Tomato Skillet",
+      "description": "Crispy pan-seared potato cubes tossed with caramelized onions, juicy tomatoes, and melted cheese in a single skillet.",
+      "preparation_minutes": 10,
+      "cooking_minutes": 18,
+      "default_servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "Continental",
+      "image_reference": "/images/cheesy-potato-skillet.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["vegetarian", "gluten-free", "nut-free"],
+      "allergens": [
+        {
+          "allergen": "milk",
+          "verification_status": "verified",
+          "source_reference": "Contains dairy cheese."
+        }
+      ],
+      "instructions": [
+        "Wash and dice the potatoes into small 1.5 cm cubes so they cook quickly. Slice the onion thinly and dice the tomato.",
+        "Heat cooking oil in a wide non-stick or cast-iron skillet over medium heat.",
+        "Add the diced potatoes in a single layer with a pinch of salt. Cook undisturbed for 5 minutes until golden underneath, then toss and cook for another 6 to 7 minutes until tender.",
+        "Push the potatoes to one side of the pan and add the sliced onion. Sauté for 4 minutes until golden, then mix everything together.",
+        "Stir in the diced tomato and black pepper. Cook for 2 minutes until warmed through.",
+        "Sprinkle grated cheese evenly over the top, cover the skillet for 1 to 2 minutes until the cheese melts, and serve immediately."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_potato", "quantity": 2, "unit": "piece", "requirement_type": "required", "preparation_note": "diced into 1.5 cm cubes" },
+        { "ingredient_id": "ing_onion", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "thinly sliced" },
+        { "ingredient_id": "ing_tomato", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "diced" },
+        { "ingredient_id": "ing_cheese", "quantity": 60, "unit": "g", "requirement_type": "required", "preparation_note": "grated" },
+        { "ingredient_id": "ing_cooking_oil", "quantity": 1.5, "unit": "tablespoon", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_black_pepper", "quantity": 0.5, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": "freshly ground" }
+      ]
+    },
+    {
+      "id": "rec_spiced_tomato_onion_rice",
+      "name": "One-Pan Spiced Tomato & Onion Rice",
+      "description": "A fragrant, zero-waste dish that transforms leftover or freshly cooked rice with sautéed onions, ripe tomatoes, and mild spices.",
+      "preparation_minutes": 8,
+      "cooking_minutes": 12,
+      "default_servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "Indian",
+      "image_reference": "/images/tomato-rice.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["vegetarian", "vegan", "gluten-free", "dairy-free", "nut-free"],
+      "allergens": [
+        {
+          "allergen": "none_declared_in_base_recipe",
+          "verification_status": "verified",
+          "source_reference": "Ingredient list audited against major 9 allergens."
+        }
+      ],
+      "instructions": [
+        "Finely slice the onion and chop the tomatoes into small pieces.",
+        "Heat cooking oil in a wide pan over medium heat. If using cumin, add it first and let it crackle for 10 seconds.",
+        "Add the sliced onion and sauté for 4 minutes until soft and lightly golden.",
+        "Add the chopped tomatoes, turmeric powder, and salt. Cook for 5 to 6 minutes, stirring occasionally, until the tomatoes soften into a glossy masala.",
+        "Add the rice and gently fold it into the tomato-onion base so the grains do not break.",
+        "Cook on low heat for 2 to 3 minutes until heated through. Serve warm."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_rice", "quantity": 250, "unit": "g", "requirement_type": "required", "preparation_note": "cooked rice (or 120 g uncooked rice, boiled)" },
+        { "ingredient_id": "ing_tomato", "quantity": 2, "unit": "piece", "requirement_type": "required", "preparation_note": "finely chopped" },
+        { "ingredient_id": "ing_onion", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "thinly sliced" },
+        { "ingredient_id": "ing_cooking_oil", "quantity": 1, "unit": "tablespoon", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_turmeric", "quantity": 0.25, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": null },
+        { "ingredient_id": "ing_cumin_seeds", "quantity": 0.5, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": null },
+        { "ingredient_id": "ing_coriander_leaves", "quantity": 1, "unit": "tablespoon", "requirement_type": "optional", "preparation_note": "finely chopped" }
+      ]
+    },
+    {
+      "id": "rec_cheesy_tomato_rice_bake",
+      "name": "Quick Cheesy Tomato & Potato Rice Skillet",
+      "description": "Hearty leftover rice simmered with tender potato cubes, sweet onions, juicy tomatoes, and topped with melted cheese.",
+      "preparation_minutes": 10,
+      "cooking_minutes": 18,
+      "default_servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "Fusion",
+      "image_reference": "/images/cheesy-rice-bake.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["vegetarian", "gluten-free", "nut-free"],
+      "allergens": [
+        {
+          "allergen": "milk",
+          "verification_status": "verified",
+          "source_reference": "Contains dairy cheese."
+        }
+      ],
+      "instructions": [
+        "Peel and finely cube the potato into 1 cm pieces. Chop the onion and dice the tomatoes.",
+        "Heat cooking oil in a deep skillet over medium heat. Add the potato cubes and onion together with a pinch of salt and cook for 8 to 9 minutes until the potatoes are tender.",
+        "Add the diced tomatoes and cook for 4 minutes until saucy.",
+        "Fold in the rice and 50 ml of water. Season with salt and optional cumin or chilli powder, mixing gently until combined.",
+        "Top evenly with grated cheese, cover with a lid for 2 minutes on low heat until melted, and serve hot."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_potato", "quantity": 2, "unit": "piece", "requirement_type": "required", "preparation_note": "1 cm cubes" },
+        { "ingredient_id": "ing_onion", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "finely chopped" },
+        { "ingredient_id": "ing_tomato", "quantity": 2, "unit": "piece", "requirement_type": "required", "preparation_note": "diced" },
+        { "ingredient_id": "ing_rice", "quantity": 200, "unit": "g", "requirement_type": "required", "preparation_note": "cooked rice" },
+        { "ingredient_id": "ing_cheese", "quantity": 50, "unit": "g", "requirement_type": "required", "preparation_note": "shredded" },
+        { "ingredient_id": "ing_cooking_oil", "quantity": 1, "unit": "tablespoon", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_cumin_seeds", "quantity": 0.5, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": null },
+        { "ingredient_id": "ing_chilli_powder", "quantity": 0.25, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": null }
+      ]
+    },
+    {
+      "id": "rec_crispy_rice_flour_pancakes",
+      "name": "Instant Crispy Rice Flour & Onion Dosas (Neer/Onion Crepes)",
+      "description": "Delicate, lacy savoury crepes made with gluten-free rice flour, finely chopped onions, and fresh chillies.",
+      "preparation_minutes": 10,
+      "cooking_minutes": 15,
+      "default_servings": 2,
+      "difficulty": "Medium",
+      "cuisine": "South Indian",
+      "image_reference": "/images/rice-flour-dosa.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["vegetarian", "vegan", "gluten-free", "dairy-free", "nut-free"],
+      "allergens": [
+        {
+          "allergen": "none_declared_in_base_recipe",
+          "verification_status": "verified",
+          "source_reference": "Uses gluten-free rice flour (distinct from wheat flour)."
+        }
+      ],
+      "instructions": [
+        "In a mixing bowl, whisk together the rice flour, salt, and 350 ml of water to form a thin, lump-free pouring batter.",
+        "Stir the finely chopped onion, finely chopped fresh chilli, and optional cumin seeds into the batter.",
+        "Heat a flat cast-iron or non-stick skillet over medium-high heat and brush lightly with cooking oil.",
+        "Stir the batter well (as rice flour settles quickly) and pour a ladleful from the outer edge inward in a circular motion.",
+        "Drizzle a few drops of cooking oil around the edges and cook for 2 to 3 minutes until crisp and golden brown. Fold and serve hot."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_rice_flour", "quantity": 120, "unit": "g", "requirement_type": "required", "preparation_note": "finely milled rice flour (do not substitute wheat flour)" },
+        { "ingredient_id": "ing_onion", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "very finely chopped" },
+        { "ingredient_id": "ing_fresh_chilli", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "finely minced" },
+        { "ingredient_id": "ing_cooking_oil", "quantity": 1, "unit": "tablespoon", "requirement_type": "required", "preparation_note": "for pan-searing" },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_cumin_seeds", "quantity": 0.5, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": null },
+        { "ingredient_id": "ing_coriander_leaves", "quantity": 1, "unit": "tablespoon", "requirement_type": "optional", "preparation_note": "finely chopped" }
+      ]
+    },
+    {
+      "id": "rec_coconut_milk_potato_curry",
+      "name": "Creamy Coconut Milk & Potato Stew (Ishtu)",
+      "description": "Mild, velvety Kerala-style potato and onion stew simmered in rich coconut milk with fresh ginger and green chillies.",
+      "preparation_minutes": 10,
+      "cooking_minutes": 20,
+      "default_servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "South Indian",
+      "image_reference": "/images/coconut-potato-stew.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["vegetarian", "vegan", "gluten-free", "dairy-free"],
+      "allergens": [
+        {
+          "allergen": "coconut",
+          "verification_status": "verified",
+          "source_reference": "Contains coconut milk (distinct from dairy milk)."
+        }
+      ],
+      "instructions": [
+        "Peel and cube the potatoes. Thinly slice the onion, slit the fresh chilli lengthwise, and julienne the ginger.",
+        "Heat cooking oil in a saucepan over medium heat. Sauté the onion, ginger, and fresh chilli for 3 minutes until fragrant without browning.",
+        "Add the cubed potatoes, salt, and 150 ml of water. Cover and simmer for 12 minutes until the potatoes are soft.",
+        "Lower the heat and pour in the coconut milk. Stir gently and simmer for 3 minutes without boiling vigorously.",
+        "Season with freshly ground black pepper and serve warm with rice or flatbread."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_potato", "quantity": 2, "unit": "piece", "requirement_type": "required", "preparation_note": "peeled and cubed" },
+        { "ingredient_id": "ing_coconut_milk", "quantity": 200, "unit": "ml", "requirement_type": "required", "preparation_note": "canned or fresh coconut milk" },
+        { "ingredient_id": "ing_onion", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "thinly sliced" },
+        { "ingredient_id": "ing_ginger", "quantity": 10, "unit": "g", "requirement_type": "required", "preparation_note": "julienned" },
+        { "ingredient_id": "ing_fresh_chilli", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "slit lengthwise" },
+        { "ingredient_id": "ing_cooking_oil", "quantity": 1, "unit": "tablespoon", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_black_pepper", "quantity": 0.5, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": "crushed" }
+      ]
+    },
+    {
+      "id": "rec_garlic_butter_pasta",
+      "name": "Quick Garlic Butter & Cheese Pasta",
+      "description": "Al dente pasta tossed with golden sautéed garlic, rich dairy butter, cracked black pepper, and grated cheese.",
+      "preparation_minutes": 5,
+      "cooking_minutes": 12,
+      "default_servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "Italian",
+      "image_reference": "/images/garlic-butter-pasta.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["vegetarian", "nut-free"],
+      "allergens": [
+        {
+          "allergen": "wheat_gluten",
+          "verification_status": "verified",
+          "source_reference": "Contains wheat pasta."
+        },
+        {
+          "allergen": "milk",
+          "verification_status": "verified",
+          "source_reference": "Contains dairy butter and dairy cheese."
+        }
+      ],
+      "instructions": [
+        "Boil the pasta in salted water for 9 to 10 minutes until al dente. Reserve 60 ml of starchy pasta cooking water before draining.",
+        "Meanwhile, melt the butter in a large skillet over medium-low heat. Add the thinly sliced garlic and cook gently for 2 minutes until fragrant and lightly golden.",
+        "Add the drained pasta and reserved pasta water to the skillet. Toss vigorously for 1 minute to emulsify the sauce.",
+        "Remove from heat, fold in the grated cheese and black pepper, and serve warm."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_pasta", "quantity": 180, "unit": "g", "requirement_type": "required", "preparation_note": "dried spaghetti or penne" },
+        { "ingredient_id": "ing_butter", "quantity": 30, "unit": "g", "requirement_type": "required", "preparation_note": "unsalted or salted butter" },
+        { "ingredient_id": "ing_garlic", "quantity": 4, "unit": "piece", "requirement_type": "required", "preparation_note": "cloves, thinly sliced" },
+        { "ingredient_id": "ing_cheese", "quantity": 40, "unit": "g", "requirement_type": "required", "preparation_note": "finely grated" },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_black_pepper", "quantity": 0.5, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": "freshly cracked" }
+      ]
+    },
+    {
+      "id": "rec_chickpea_spinach_tomato_stew",
+      "name": "Spiced Chickpea, Spinach & Tomato Stew",
+      "description": "Nutrient-dense, high-protein stew combining tender chickpeas, wilted spinach, garlic, onions, and tangy tomatoes.",
+      "preparation_minutes": 8,
+      "cooking_minutes": 17,
+      "default_servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "Mediterranean",
+      "image_reference": "/images/chickpea-spinach-stew.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["vegetarian", "vegan", "gluten-free", "dairy-free", "nut-free"],
+      "allergens": [
+        {
+          "allergen": "none_declared_in_base_recipe",
+          "verification_status": "verified",
+          "source_reference": "Audited plant-based ingredients."
+        }
+      ],
+      "instructions": [
+        "Finely dice the onion, mince the garlic, and chop the tomatoes.",
+        "Warm cooking oil in a deep pan over medium heat. Sauté the onion and garlic with cumin for 4 minutes until fragrant.",
+        "Add the chopped tomatoes and cook for 5 minutes until broken down.",
+        "Stir in the drained chickpeas and 100 ml of water. Simmer for 6 minutes so the chickpeas absorb the flavours.",
+        "Fold in the washed spinach leaves and cook for 2 minutes until wilted. Season with salt and optional lemon juice before serving."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_chickpeas", "quantity": 240, "unit": "g", "requirement_type": "required", "preparation_note": "cooked or canned, drained" },
+        { "ingredient_id": "ing_spinach", "quantity": 100, "unit": "g", "requirement_type": "required", "preparation_note": "washed leaves" },
+        { "ingredient_id": "ing_tomato", "quantity": 2, "unit": "piece", "requirement_type": "required", "preparation_note": "chopped" },
+        { "ingredient_id": "ing_onion", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "finely diced" },
+        { "ingredient_id": "ing_garlic", "quantity": 2, "unit": "piece", "requirement_type": "required", "preparation_note": "cloves, minced" },
+        { "ingredient_id": "ing_cooking_oil", "quantity": 1, "unit": "tablespoon", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_cumin_seeds", "quantity": 0.5, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": "ground" },
+        { "ingredient_id": "ing_lemon_juice", "quantity": 1, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": "fresh squeeze" }
+      ]
+    },
+    {
+      "id": "rec_masala_omelette",
+      "name": "Street-Style Onion & Tomato Masala Omelette",
+      "description": "Fluffy pan-fried eggs loaded with finely diced onions, tomatoes, turmeric, and optional green chillies.",
+      "preparation_minutes": 5,
+      "cooking_minutes": 5,
+      "default_servings": 1,
+      "difficulty": "Easy",
+      "cuisine": "Indian",
+      "image_reference": "/images/masala-omelette.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["gluten-free", "dairy-free", "nut-free"],
+      "allergens": [
+        {
+          "allergen": "egg",
+          "verification_status": "verified",
+          "source_reference": "Contains whole poultry eggs."
+        }
+      ],
+      "instructions": [
+        "Crack the eggs into a bowl and whisk briskly with salt and optional turmeric powder until frothy.",
+        "Fold in the finely diced onion, seeded and diced tomato, and optional fresh chilli and coriander leaves.",
+        "Heat cooking oil in a small non-stick frying pan over medium heat.",
+        "Pour in the egg mixture, tilting the pan so it spreads evenly. Cook for 2 minutes until the base is golden and edges are set.",
+        "Flip carefully and cook for another 1 to 2 minutes until cooked completely through (ensure no raw egg remains for food safety). Serve immediately."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_egg", "quantity": 2, "unit": "piece", "requirement_type": "required", "preparation_note": "large eggs" },
+        { "ingredient_id": "ing_onion", "quantity": 0.5, "unit": "piece", "requirement_type": "required", "preparation_note": "finely diced" },
+        { "ingredient_id": "ing_tomato", "quantity": 0.5, "unit": "piece", "requirement_type": "required", "preparation_note": "seeded and finely diced" },
+        { "ingredient_id": "ing_cooking_oil", "quantity": 1, "unit": "teaspoon", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_turmeric", "quantity": 0.125, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": null },
+        { "ingredient_id": "ing_fresh_chilli", "quantity": 1, "unit": "piece", "requirement_type": "optional", "preparation_note": "finely chopped" },
+        { "ingredient_id": "ing_coriander_leaves", "quantity": 1, "unit": "tablespoon", "requirement_type": "optional", "preparation_note": "chopped" }
+      ]
+    },
+    {
+      "id": "rec_spring_onion_soy_fried_rice",
+      "name": "Wok-Tossed Spring Onion & Garlic Fried Rice",
+      "description": "Crisp, savoury fried rice highlighting fresh green spring onions, aromatic garlic, and umami soy sauce.",
+      "preparation_minutes": 8,
+      "cooking_minutes": 8,
+      "default_servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "East Asian",
+      "image_reference": "/images/spring-onion-fried-rice.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["vegetarian", "vegan", "dairy-free", "nut-free"],
+      "allergens": [
+        {
+          "allergen": "soy",
+          "verification_status": "verified",
+          "source_reference": "Contains soy sauce."
+        },
+        {
+          "allergen": "wheat_gluten",
+          "verification_status": "unverified",
+          "source_reference": "Standard soy sauce frequently contains wheat unless certified gluten-free tamari is used."
+        }
+      ],
+      "instructions": [
+        "Finely slice the spring onions, separating the crisp white bases from the bright green tops. Mince the garlic.",
+        "Heat cooking oil in a wok or wide skillet over high heat. Add the minced garlic and white spring onion bases, stir-frying for 30 seconds.",
+        "Add the chilled cooked rice and toss over high heat for 3 to 4 minutes until every grain is separate and hot.",
+        "Drizzle soy sauce around the perimeter of the wok and season with salt and optional black pepper.",
+        "Fold in the green spring onion tops, toss for 15 seconds, and serve immediately."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_rice", "quantity": 250, "unit": "g", "requirement_type": "required", "preparation_note": "chilled cooked rice" },
+        { "ingredient_id": "ing_spring_onion", "quantity": 3, "unit": "piece", "requirement_type": "required", "preparation_note": "thinly sliced, whites and greens separated" },
+        { "ingredient_id": "ing_garlic", "quantity": 3, "unit": "piece", "requirement_type": "required", "preparation_note": "cloves, minced" },
+        { "ingredient_id": "ing_soy_sauce", "quantity": 1, "unit": "tablespoon", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_cooking_oil", "quantity": 1, "unit": "tablespoon", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_black_pepper", "quantity": 0.25, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": null }
+      ]
+    },
+    {
+      "id": "rec_peanut_garlic_rice_bowl",
+      "name": "Crunchy Roasted Peanut, Tomato & Rice Skillet",
+      "description": "South-Indian inspired tangy tomato and onion rice finished with crunchy roasted peanuts and warm spices.",
+      "preparation_minutes": 8,
+      "cooking_minutes": 12,
+      "default_servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "South Indian",
+      "image_reference": "/images/peanut-rice-bowl.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["vegetarian", "vegan", "gluten-free", "dairy-free"],
+      "allergens": [
+        {
+          "allergen": "peanuts",
+          "verification_status": "verified",
+          "source_reference": "Contains roasted peanuts (legume allergen; distinct from tree nuts)."
+        }
+      ],
+      "instructions": [
+        "Heat cooking oil in a pan over medium heat. Add the peanuts and toast for 2 minutes until golden and crunchy.",
+        "Add the chopped onion and sauté for 3 minutes until translucent.",
+        "Add the diced tomato, turmeric powder, and salt. Cook for 4 minutes until soft.",
+        "Add the cooked rice and toss gently for 2 to 3 minutes until evenly coated and heated through."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_rice", "quantity": 250, "unit": "g", "requirement_type": "required", "preparation_note": "cooked rice" },
+        { "ingredient_id": "ing_peanuts", "quantity": 40, "unit": "g", "requirement_type": "required", "preparation_note": "raw or roasted peanuts" },
+        { "ingredient_id": "ing_onion", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "chopped" },
+        { "ingredient_id": "ing_tomato", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "diced" },
+        { "ingredient_id": "ing_cooking_oil", "quantity": 1, "unit": "tablespoon", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_turmeric", "quantity": 0.25, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": null }
+      ]
+    },
+    {
+      "id": "rec_creamy_dairy_potato_bake",
+      "name": "Rustic Dairy Milk & Butter Mashed Potato Gratin",
+      "description": "Velvety mashed potatoes whipped with warm dairy milk, real butter, sautéed onions, and baked under a golden cheese crust.",
+      "preparation_minutes": 12,
+      "cooking_minutes": 25,
+      "default_servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "European",
+      "image_reference": "/images/potato-gratin.svg",
+      "source_reference": "Leftover Chef Verified Test Kitchen Catalogue v1.0",
+      "licence_reference": "CC0-1.0 Public Domain Dedication",
+      "dietary_attributes": ["vegetarian", "gluten-free", "nut-free"],
+      "allergens": [
+        {
+          "allergen": "milk",
+          "verification_status": "verified",
+          "source_reference": "Contains cow's milk, dairy butter, and cheese."
+        }
+      ],
+      "instructions": [
+        "Peel and boil the potatoes in salted water for 15 minutes until fork-tender, then drain thoroughly.",
+        "While potatoes boil, melt half the butter in a small pan and sauté the finely chopped onion for 5 minutes until sweet and golden.",
+        "Mash the hot potatoes with the remaining butter, warm dairy milk, and salt until smooth.",
+        "Fold in the caramelized onion, transfer to a heatproof dish, top with grated cheese, and broil or bake for 5 to 8 minutes until bubbling."
+      ],
+      "ingredients": [
+        { "ingredient_id": "ing_potato", "quantity": 3, "unit": "piece", "requirement_type": "required", "preparation_note": "peeled and quartered" },
+        { "ingredient_id": "ing_milk", "quantity": 100, "unit": "ml", "requirement_type": "required", "preparation_note": "warm dairy milk" },
+        { "ingredient_id": "ing_butter", "quantity": 25, "unit": "g", "requirement_type": "required", "preparation_note": "dairy butter" },
+        { "ingredient_id": "ing_cheese", "quantity": 50, "unit": "g", "requirement_type": "required", "preparation_note": "grated" },
+        { "ingredient_id": "ing_onion", "quantity": 1, "unit": "piece", "requirement_type": "required", "preparation_note": "finely chopped" },
+        { "ingredient_id": "ing_salt", "quantity": null, "unit": "to taste", "requirement_type": "required", "preparation_note": null },
+        { "ingredient_id": "ing_black_pepper", "quantity": 0.25, "unit": "teaspoon", "requirement_type": "optional", "preparation_note": null }
+      ]
+    }
+  ]
+}
